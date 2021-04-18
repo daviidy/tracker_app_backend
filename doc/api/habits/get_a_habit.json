@@ -26,7 +26,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Beula Hilpert\",\n  \"created_at\": \"2021-04-18T17:11:13.803Z\",\n  \"updated_at\": \"2021-04-18T17:11:13.803Z\"\n}",
+      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Amb. Lizzie Johnston\",\n  \"created_at\": \"2021-04-18T18:08:51.616Z\",\n  \"updated_at\": \"2021-04-18T18:08:51.616Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -35,11 +35,11 @@
         "X-Permitted-Cross-Domain-Policies": "none",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"190df3581fe55a0f6a18b086f9eae654\"",
+        "ETag": "W/\"b9bb098313d6c4236d110e0e64cfdc65\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "eacca19d-3979-4bc8-8bc9-689895d00cae",
-        "X-Runtime": "0.004580",
-        "Content-Length": "111"
+        "X-Request-Id": "4e975360-d7b4-4c42-93d5-aff35c0b215c",
+        "X-Runtime": "0.006836",
+        "Content-Length": "118"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

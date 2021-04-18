@@ -35,7 +35,7 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Julienne Schowalter\",\n  \"created_at\": \"2021-04-18T17:11:14.271Z\",\n  \"updated_at\": \"2021-04-18T17:11:14.271Z\"\n}",
+      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Esperanza McCullough\",\n  \"created_at\": \"2021-04-18T18:08:52.819Z\",\n  \"updated_at\": \"2021-04-18T18:08:52.819Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -44,11 +44,11 @@
         "X-Permitted-Cross-Domain-Policies": "none",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"34fca4cd11a50fa228d5bd9a7465ce82\"",
+        "ETag": "W/\"31ff90d8d1074ffafbade3493892cc26\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "82e10155-b463-4aa7-956b-a613aee1f41e",
-        "X-Runtime": "0.009474",
-        "Content-Length": "117"
+        "X-Request-Id": "fc523dea-de2b-4165-9a79-0b7489e9ce45",
+        "X-Runtime": "0.016133",
+        "Content-Length": "118"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

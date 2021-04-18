@@ -30,7 +30,7 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Any habit\",\n  \"created_at\": \"2021-04-18T17:11:13.849Z\",\n  \"updated_at\": \"2021-04-18T17:11:13.849Z\"\n}",
+      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Any habit\",\n  \"created_at\": \"2021-04-18T18:08:51.739Z\",\n  \"updated_at\": \"2021-04-18T18:08:51.739Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -39,10 +39,10 @@
         "X-Permitted-Cross-Domain-Policies": "none",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"72a4b0e9ef2a6ae75978add1ffe7ba25\"",
+        "ETag": "W/\"d8044a564a6267d52a2db9995a6f502b\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "ee1b8ffd-9f0c-4133-b339-ca4a319e85b7",
-        "X-Runtime": "0.007111",
+        "X-Request-Id": "53019d19-e23c-45a2-9ae5-bbe23703f939",
+        "X-Runtime": "0.014744",
         "Content-Length": "107"
       },
       "response_content_type": "application/json; charset=utf-8",
