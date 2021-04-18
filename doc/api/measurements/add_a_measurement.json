@@ -35,7 +35,7 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Esperanza McCullough\",\n  \"created_at\": \"2021-04-18T18:08:52.819Z\",\n  \"updated_at\": \"2021-04-18T18:08:52.819Z\"\n}",
+      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Rep. Rickey Mohr\",\n  \"created_at\": \"2021-04-18T18:11:01.988Z\",\n  \"updated_at\": \"2021-04-18T18:11:01.988Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -44,11 +44,11 @@
         "X-Permitted-Cross-Domain-Policies": "none",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"31ff90d8d1074ffafbade3493892cc26\"",
+        "ETag": "W/\"beba5291b261688fdea36adb8f8daf47\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "fc523dea-de2b-4165-9a79-0b7489e9ce45",
-        "X-Runtime": "0.016133",
-        "Content-Length": "118"
+        "X-Request-Id": "fc25cae9-8e9b-451f-a5a1-3e2f8cc2dccb",
+        "X-Runtime": "0.013803",
+        "Content-Length": "114"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null
