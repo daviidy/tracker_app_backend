@@ -1,6 +1,6 @@
 class MeasurementsController < ApplicationController
   before_action :set_habit
-  before_action :set_habit_measurement, only: [:show, :update, :destroy]
+  before_action :set_habit_measurement, only: %i[show update destroy]
 
   # GET /habits/:habit_id/measurements
   def index

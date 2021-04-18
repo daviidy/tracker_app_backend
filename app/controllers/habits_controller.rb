@@ -1,5 +1,5 @@
 class HabitsController < ApplicationController
-    before_action :set_habit, only: [:show, :update, :destroy]
+  before_action :set_habit, only: %i[show update destroy]
 
   # GET /habits
   def index

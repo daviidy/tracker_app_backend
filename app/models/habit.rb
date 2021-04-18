@@ -1,5 +1,5 @@
 class Habit < ApplicationRecord
-    # model association
+  # model association
   has_many :measurements, dependent: :destroy
 
   # validations

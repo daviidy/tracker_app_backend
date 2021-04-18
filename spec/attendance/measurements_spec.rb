@@ -3,12 +3,12 @@ require 'rails_helper'
 require 'rspec_api_documentation/dsl'
 require 'json'
 
-resource "Measurements" do
-  explanation "Measurements resource"
-  header "Content-Type", "application/json"
-  header "Host", "test.org"
+resource 'Measurements' do
+  explanation 'Measurements resource'
+  header 'Content-Type', 'application/json'
+  header 'Host', 'test.org'
 
-  get "/habits/:habit_id/measurements" do
+  get '/habits/:habit_id/measurements' do
     let!(:habit) { create(:habit) }
     let!(:measurements) { create_list(:measurement, 20, habit_id: habit.id) }
     let(:habit_id) { habit.id }
@@ -20,8 +20,7 @@ resource "Measurements" do
     end
   end
 
-  get "/habits/:habit_id/measurements/:id" do
-
+  get '/habits/:habit_id/measurements/:id' do
     context '200' do
       let!(:habit) { create(:habit) }
       let!(:measurements) { create_list(:measurement, 20, habit_id: habit.id) }
@@ -45,30 +44,26 @@ resource "Measurements" do
     end
   end
 
-  post "/habits/:habit_id/measurements" do
-
+  post '/habits/:habit_id/measurements' do
     parameter :value, with_example: true
     parameter :date, with_example: true
 
     let(:value) { 10.2 }
     let(:date) { Date.today }
-    
+
     let(:raw_post) { params.to_json }
 
     let!(:habit) { create(:habit) }
     let(:habit_id) { habit.id }
 
     context '200' do
-
       example_request 'Add a measurement' do
-
         expect(status).to eq(201)
       end
     end
   end
 
-  put "/habits/:habit_id/measurements/:id" do
-
+  put '/habits/:habit_id/measurements/:id' do
     parameter :value, with_example: true
 
     let(:value) { 13 }
@@ -80,22 +75,19 @@ resource "Measurements" do
       let(:habit_id) { habit.id }
       let(:id) { measurements.first.id }
       example_request 'Edit a measurement' do
-
         expect(status).to eq(204)
         expect(response_body).to be_empty
       end
     end
   end
 
-  delete "/habits/:habit_id/measurements/:id" do
-
+  delete '/habits/:habit_id/measurements/:id' do
     context '200' do
       let!(:habit) { create(:habit) }
       let!(:measurements) { create_list(:measurement, 20, habit_id: habit.id) }
       let(:habit_id) { habit.id }
       let(:id) { measurements.first.id }
       example_request 'Delete a measurement' do
-
         expect(status).to eq(204)
       end
     end
