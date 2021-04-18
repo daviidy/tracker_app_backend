@@ -1,0 +1,48 @@
+{
+  "resource": "Measurements",
+  "resource_explanation": "Measurements resource",
+  "http_method": "GET",
+  "route": "/habits/:habit_id/measurements/:id",
+  "description": "Get a measurement",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/habits/1/measurements/1",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "test.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": 1,\n  \"value\": 33145.53,\n  \"date\": \"-15296663-11-05\",\n  \"habit_id\": 1,\n  \"created_at\": \"2021-04-18T17:11:14.147Z\",\n  \"updated_at\": \"2021-04-18T17:11:14.147Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"432852adfad9a8e9120549871cf98df4\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "e38762c4-76da-4850-9891-f78e6b4db5b4",
+        "X-Runtime": "0.004512",
+        "Content-Length": "143"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

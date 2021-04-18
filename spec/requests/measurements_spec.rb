@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'rspec_api_documentation/dsl'
 
 RSpec.describe 'Measurements API' do
   # Initialize the test data
@@ -117,7 +118,7 @@ RSpec.describe 'Measurements API' do
   end
 
   # Test suite for DELETE /habits/:id
-  describe 'DELETE /habits/:id' do
+  describe 'DELETE /habits/:habit_id/measurements/:id' do
     before { delete "/habits/#{habit_id}/measurements/#{id}" }
 
     it 'returns status code 204' do

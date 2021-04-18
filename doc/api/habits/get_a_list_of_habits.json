@@ -1,0 +1,48 @@
+{
+  "resource": "Habits",
+  "resource_explanation": "Habits resource",
+  "http_method": "GET",
+  "route": "/habits",
+  "description": "Get a list of habits",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/habits",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "test.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 1,\n    \"name\": \"Hubert Farrell\",\n    \"created_at\": \"2021-04-18T17:11:13.711Z\",\n    \"updated_at\": \"2021-04-18T17:11:13.711Z\"\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Adolfo Greenfelder\",\n    \"created_at\": \"2021-04-18T17:11:13.717Z\",\n    \"updated_at\": \"2021-04-18T17:11:13.717Z\"\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Pok Toy III\",\n    \"created_at\": \"2021-04-18T17:11:13.720Z\",\n    \"updated_at\": \"2021-04-18T17:11:13.720Z\"\n  },\n  {\n    \"id\": 4,\n    \"name\": \"Candance Spinka\",\n    \"created_at\": \"2021-04-18T17:11:13.723Z\",\n    \"updated_at\": \"2021-04-18T17:11:13.723Z\"\n  },\n  {\n    \"id\": 5,\n    \"name\": \"Prof. Margarite Lesch\",\n    \"created_at\": \"2021-04-18T17:11:13.725Z\",\n    \"updated_at\": \"2021-04-18T17:11:13.725Z\"\n  },\n  {\n    \"id\": 6,\n    \"name\": \"Gil Emmerich\",\n    \"created_at\": \"2021-04-18T17:11:13.728Z\",\n    \"updated_at\": \"2021-04-18T17:11:13.728Z\"\n  },\n  {\n    \"id\": 7,\n    \"name\": \"Denver Quitzon\",\n    \"created_at\": \"2021-04-18T17:11:13.731Z\",\n    \"updated_at\": \"2021-04-18T17:11:13.731Z\"\n  },\n  {\n    \"id\": 8,\n    \"name\": \"The Hon. Lorrine Roob\",\n    \"created_at\": \"2021-04-18T17:11:13.734Z\",\n    \"updated_at\": \"2021-04-18T17:11:13.734Z\"\n  },\n  {\n    \"id\": 9,\n    \"name\": \"Qiana Kessler\",\n    \"created_at\": \"2021-04-18T17:11:13.737Z\",\n    \"updated_at\": \"2021-04-18T17:11:13.737Z\"\n  },\n  {\n    \"id\": 10,\n    \"name\": \"Rashad Auer\",\n    \"created_at\": \"2021-04-18T17:11:13.740Z\",\n    \"updated_at\": \"2021-04-18T17:11:13.740Z\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"dfe4dc6f1d864fdc7782834cad46d2ec\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "778bb816-88b0-4831-a6a4-d4d00059ce0b",
+        "X-Runtime": "0.025998",
+        "Content-Length": "1142"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

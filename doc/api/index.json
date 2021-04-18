@@ -1,0 +1,86 @@
+{
+  "resources": [
+    {
+      "name": "Habits",
+      "explanation": "Habits resource",
+      "examples": [
+        {
+          "description": "Add a habit",
+          "link": "habits/add_a_habit.json",
+          "groups": "all",
+          "route": "/habits",
+          "method": "post"
+        },
+        {
+          "description": "Delete a habit",
+          "link": "habits/delete_a_habit.json",
+          "groups": "all",
+          "route": "/habits/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Edit a habit",
+          "link": "habits/edit_a_habit.json",
+          "groups": "all",
+          "route": "/habits/:id",
+          "method": "put"
+        },
+        {
+          "description": "Get a habit",
+          "link": "habits/get_a_habit.json",
+          "groups": "all",
+          "route": "/habits/:id",
+          "method": "get"
+        },
+        {
+          "description": "Get a list of habits",
+          "link": "habits/get_a_list_of_habits.json",
+          "groups": "all",
+          "route": "/habits",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Measurements",
+      "explanation": "Measurements resource",
+      "examples": [
+        {
+          "description": "Add a measurement",
+          "link": "measurements/add_a_measurement.json",
+          "groups": "all",
+          "route": "/habits/:habit_id/measurements",
+          "method": "post"
+        },
+        {
+          "description": "Delete a measurement",
+          "link": "measurements/delete_a_measurement.json",
+          "groups": "all",
+          "route": "/habits/:habit_id/measurements/:id",
+          "method": "delete"
+        },
+        {
+          "description": "Edit a measurement",
+          "link": "measurements/edit_a_measurement.json",
+          "groups": "all",
+          "route": "/habits/:habit_id/measurements/:id",
+          "method": "put"
+        },
+        {
+          "description": "Get a list of measurements for a habit",
+          "link": "measurements/get_a_list_of_measurements_for_a_habit.json",
+          "groups": "all",
+          "route": "/habits/:habit_id/measurements",
+          "method": "get"
+        },
+        {
+          "description": "Get a measurement",
+          "link": "measurements/get_a_measurement.json",
+          "groups": "all",
+          "route": "/habits/:habit_id/measurements/:id",
+          "method": "get"
+        }
+      ]
+    }
+  ]
+}

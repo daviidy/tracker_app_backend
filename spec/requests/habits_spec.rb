@@ -1,5 +1,6 @@
 # spec/requests/habits_spec.rb
 require 'rails_helper'
+require 'rspec_api_documentation/dsl'
 
 RSpec.describe 'Habits API', type: :request do
   # initialize test data
