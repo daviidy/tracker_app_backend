@@ -79,3 +79,4 @@ resource 'Habits' do
     end
   end
 end
+# rubocop:enable  Metrics/BlockLength
