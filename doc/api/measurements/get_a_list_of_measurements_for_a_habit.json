@@ -1,0 +1,48 @@
+{
+  "resource": "Measurements",
+  "resource_explanation": "Measurements resource",
+  "http_method": "GET",
+  "route": "/habits/:habit_id/measurements",
+  "description": "Get a list of measurements for a habit",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/habits/1/measurements",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "test.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 1,\n    \"value\": 51757.03,\n    \"date\": \"-9342082-10-29\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.643Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.643Z\"\n  },\n  {\n    \"id\": 2,\n    \"value\": 49236.58,\n    \"date\": \"-17389915-03-31\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.649Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.649Z\"\n  },\n  {\n    \"id\": 3,\n    \"value\": 94804.81,\n    \"date\": \"-7510611-06-09\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.656Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.656Z\"\n  },\n  {\n    \"id\": 4,\n    \"value\": 59925.86,\n    \"date\": \"-9059974-09-05\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.661Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.661Z\"\n  },\n  {\n    \"id\": 5,\n    \"value\": 89283.85,\n    \"date\": \"-5323528-01-22\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.667Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.667Z\"\n  },\n  {\n    \"id\": 6,\n    \"value\": 28009.52,\n    \"date\": \"-24039462-03-29\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.674Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.674Z\"\n  },\n  {\n    \"id\": 7,\n    \"value\": 64615.82,\n    \"date\": \"-9356954-07-21\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.681Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.681Z\"\n  },\n  {\n    \"id\": 8,\n    \"value\": 88983.93,\n    \"date\": \"-21539104-01-24\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.688Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.688Z\"\n  },\n  {\n    \"id\": 9,\n    \"value\": 14616.56,\n    \"date\": \"-18494787-04-06\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.693Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.693Z\"\n  },\n  {\n    \"id\": 10,\n    \"value\": 32369.29,\n    \"date\": \"-6638556-08-29\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.701Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.701Z\"\n  },\n  {\n    \"id\": 11,\n    \"value\": 86732.14,\n    \"date\": \"-26466890-06-28\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.707Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.707Z\"\n  },\n  {\n    \"id\": 12,\n    \"value\": 37422.13,\n    \"date\": \"-9746789-12-04\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.712Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.712Z\"\n  },\n  {\n    \"id\": 13,\n    \"value\": 57831.42,\n    \"date\": \"-21892126-09-15\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.720Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.720Z\"\n  },\n  {\n    \"id\": 14,\n    \"value\": 26444.94,\n    \"date\": \"-11569219-03-28\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.725Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.725Z\"\n  },\n  {\n    \"id\": 15,\n    \"value\": 72322.85,\n    \"date\": \"-17997617-06-04\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.732Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.732Z\"\n  },\n  {\n    \"id\": 16,\n    \"value\": 58172.77,\n    \"date\": \"-10636517-08-27\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.742Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.742Z\"\n  },\n  {\n    \"id\": 17,\n    \"value\": 12491.78,\n    \"date\": \"-13782524-06-11\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.748Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.748Z\"\n  },\n  {\n    \"id\": 18,\n    \"value\": 65169.66,\n    \"date\": \"-21018854-02-18\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.754Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.754Z\"\n  },\n  {\n    \"id\": 19,\n    \"value\": 65134.16,\n    \"date\": \"-15146856-02-21\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.760Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.760Z\"\n  },\n  {\n    \"id\": 20,\n    \"value\": 68257.86,\n    \"date\": \"-15866963-11-30\",\n    \"habit_id\": 1,\n    \"created_at\": \"2021-04-18T18:11:01.765Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.765Z\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"49de04006f870321c3c5a4faa5b5d796\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "976dabdf-d27c-4bd1-b974-e9b9ef091c85",
+        "X-Runtime": "0.020400",
+        "Content-Length": "2885"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

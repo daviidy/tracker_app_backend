@@ -1,0 +1,52 @@
+{
+  "resource": "Habits",
+  "resource_explanation": "Habits resource",
+  "http_method": "POST",
+  "route": "/habits",
+  "description": "Add a habit",
+  "explanation": null,
+  "parameters": [
+    {
+      "with_example": true,
+      "name": "name",
+      "description": " name"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/habits",
+      "request_body": "{\"name\":\"Any habit\"}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "test.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Any habit\",\n  \"created_at\": \"2021-04-18T18:11:01.461Z\",\n  \"updated_at\": \"2021-04-18T18:11:01.461Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"05ab84fc96e29c29ca27b20a964a684c\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "1a22ebd4-b166-48f5-9549-4fd7512872a5",
+        "X-Runtime": "0.010912",
+        "Content-Length": "107"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

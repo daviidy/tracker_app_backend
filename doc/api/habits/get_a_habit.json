@@ -1,0 +1,48 @@
+{
+  "resource": "Habits",
+  "resource_explanation": "Habits resource",
+  "http_method": "GET",
+  "route": "/habits/:id",
+  "description": "Get a habit",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/habits/1",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "test.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Derek Mann\",\n  \"created_at\": \"2021-04-18T18:11:01.409Z\",\n  \"updated_at\": \"2021-04-18T18:11:01.409Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"7bb4f730ba510711fa053e378d3a5f15\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "53913828-774d-456d-89f6-7967362657a2",
+        "X-Runtime": "0.004807",
+        "Content-Length": "108"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "resource": "Habits",
+  "resource_explanation": "Habits resource",
+  "http_method": "GET",
+  "route": "/habits",
+  "description": "Get a list of habits",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/habits",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "test.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 1,\n    \"name\": \"Julius Stokes\",\n    \"created_at\": \"2021-04-18T18:11:01.271Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.271Z\"\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Laurinda Schoen\",\n    \"created_at\": \"2021-04-18T18:11:01.286Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.286Z\"\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Kasandra Abshire\",\n    \"created_at\": \"2021-04-18T18:11:01.291Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.291Z\"\n  },\n  {\n    \"id\": 4,\n    \"name\": \"Michal Marvin\",\n    \"created_at\": \"2021-04-18T18:11:01.295Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.295Z\"\n  },\n  {\n    \"id\": 5,\n    \"name\": \"Fr. Antionette Rohan\",\n    \"created_at\": \"2021-04-18T18:11:01.298Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.298Z\"\n  },\n  {\n    \"id\": 6,\n    \"name\": \"Ardelle Wisoky VM\",\n    \"created_at\": \"2021-04-18T18:11:01.301Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.301Z\"\n  },\n  {\n    \"id\": 7,\n    \"name\": \"Rigoberto Runte\",\n    \"created_at\": \"2021-04-18T18:11:01.304Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.304Z\"\n  },\n  {\n    \"id\": 8,\n    \"name\": \"Aaron Greenfelder\",\n    \"created_at\": \"2021-04-18T18:11:01.308Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.308Z\"\n  },\n  {\n    \"id\": 9,\n    \"name\": \"Susann Jacobs\",\n    \"created_at\": \"2021-04-18T18:11:01.312Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.312Z\"\n  },\n  {\n    \"id\": 10,\n    \"name\": \"Edna Bernhard\",\n    \"created_at\": \"2021-04-18T18:11:01.316Z\",\n    \"updated_at\": \"2021-04-18T18:11:01.316Z\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"668c599b864bc900602d203c3bbcd891\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "4780c5c6-298b-4e3d-a8f3-85f7f9cba846",
+        "X-Runtime": "0.032121",
+        "Content-Length": "1144"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}
