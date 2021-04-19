@@ -1,7 +1,7 @@
 /*
  *= require apitome/bootstrap.min
  */
-
+ /* stylelint-disable */
 body {
   position: relative;
   padding-top: 50px;
