@@ -32,6 +32,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # gem 'rack-cors'
 
 gem 'apitome', github: 'jejacks0n/apitome'
+gem 'rspec_api_documentation'
 
 group :test do
   gem 'database_cleaner'
