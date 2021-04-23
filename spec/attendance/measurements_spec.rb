@@ -10,7 +10,7 @@ resource 'Measurements' do
   header 'Host', 'test.org'
 
   token = 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyMDM4MDk5NX0.9kdtRxlazvcIK5RdwhfgeBb0rPhPuA1H3jpRNcZOBo0'
-  
+
   header 'Authorization', "Bearer #{token}"
 
   get '/habits/:habit_id/measurements' do

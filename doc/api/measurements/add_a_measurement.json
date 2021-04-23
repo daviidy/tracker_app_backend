@@ -41,7 +41,7 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Fr. Marvin Bode\",\n  \"created_at\": \"2021-04-23T13:03:51.707Z\",\n  \"updated_at\": \"2021-04-23T13:03:51.707Z\"\n}",
+      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Coralie Hills\",\n  \"created_at\": \"2021-04-23T13:07:14.682Z\",\n  \"updated_at\": \"2021-04-23T13:07:14.682Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -50,12 +50,12 @@
         "X-Permitted-Cross-Domain-Policies": "none",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"daf7ff4ef2bff910bb6f531013f4c313\"",
+        "ETag": "W/\"4eb1cc281a0116231249d9aeb5d6857f\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "61142767-0398-4405-a922-2a0eda214e75",
-        "X-Runtime": "0.010622",
+        "X-Request-Id": "d92d5831-32a6-4750-bda2-314e4f572134",
+        "X-Runtime": "0.011617",
         "Vary": "Origin",
-        "Content-Length": "113"
+        "Content-Length": "111"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

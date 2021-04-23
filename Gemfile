@@ -37,8 +37,8 @@ gem 'jwt'
 gem 'rack-cors'
 
 gem 'apitome', github: 'jejacks0n/apitome'
-gem 'rspec-rails'
 gem 'rspec_api_documentation'
+gem 'rspec-rails'
 
 group :test do
   gem 'database_cleaner'

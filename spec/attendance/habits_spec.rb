@@ -8,16 +8,15 @@ resource 'Habits' do
   explanation 'Habits resource'
   header 'Content-Type', 'application/json'
   header 'Host', 'test.org'
-  
 
   token = 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyMDM4MDk5NX0.9kdtRxlazvcIK5RdwhfgeBb0rPhPuA1H3jpRNcZOBo0'
-  
+
   header 'Authorization', "Bearer #{token}"
 
   get '/habits' do
-    let!(:habits) { create_list(:habit, 10) }  
-    let!(:user) { create(:user) } 
-    
+    let!(:habits) { create_list(:habit, 10) }
+    let!(:user) { create(:user) }
+
     context '200' do
       example_request 'Get a list of habits' do
         expect(status).to eq(200)

@@ -31,7 +31,7 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Any habit\",\n  \"created_at\": \"2021-04-23T13:03:51.189Z\",\n  \"updated_at\": \"2021-04-23T13:03:51.189Z\"\n}",
+      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Any habit\",\n  \"created_at\": \"2021-04-23T13:07:14.205Z\",\n  \"updated_at\": \"2021-04-23T13:07:14.205Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -40,10 +40,10 @@
         "X-Permitted-Cross-Domain-Policies": "none",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"e61928e18c9fa6b8e18f43cb7724eed2\"",
+        "ETag": "W/\"1ee3ee43eb306b4677c1cc5558e87a67\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "d9c36bf1-690c-4537-a7ba-781ddf9c06df",
-        "X-Runtime": "0.009928",
+        "X-Request-Id": "8d00f5af-0884-4307-a756-436ee1d7eb77",
+        "X-Runtime": "0.007516",
         "Vary": "Origin",
         "Content-Length": "107"
       },

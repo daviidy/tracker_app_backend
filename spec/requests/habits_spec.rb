@@ -9,7 +9,7 @@ RSpec.describe 'Habits API', type: :request do
   let(:habit_id) { habits.first.id }
 
   let(:auth_params) { { email: user.email, password: user.password } }
-  
+
   def authenticated_header(user)
     post '/auth', params: { email: user.email, password: user.password }
     token = json['token']
@@ -18,7 +18,6 @@ RSpec.describe 'Habits API', type: :request do
 
   # Test suite for GET /habits
   describe 'GET /habits' do
-
     # make HTTP get request before each example
     before { get '/habits', headers: authenticated_header(user) }
 

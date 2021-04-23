@@ -24,7 +24,7 @@
     {
       "request_method": "POST",
       "request_path": "/auth",
-      "request_body": "{\"email\":\"christoper@schimmel.net\",\"password\":\"IpFwMt7C\"}",
+      "request_body": "{\"email\":\"robin@wuckert-blick.info\",\"password\":\"JnKhBl33W2iMwO5\"}",
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "test.org",
@@ -36,7 +36,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyMDM5MjYzMn0.672g4SdMd-wKCew5Cw26lIkPB_KoK1CCYtDkHDWxQkE\"\n}",
+      "response_body": "{\n  \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyMDM5MjgzNX0.cIkz5nv9duFGVYM4Hg7Kr8s-0OIo9QZyghkKVMy4zSQ\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -45,10 +45,10 @@
         "X-Permitted-Cross-Domain-Policies": "none",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"691cdd4cc051d10126d68a6b943b0455\"",
+        "ETag": "W/\"05c51b51c5a888fd41e033849a948d1c\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "c0edd077-198f-4278-8466-67c2da907460",
-        "X-Runtime": "0.009619",
+        "X-Request-Id": "47fbcf83-0b6f-4809-bf88-63bd72523c74",
+        "X-Runtime": "0.015704",
         "Vary": "Origin",
         "Content-Length": "112"
       },

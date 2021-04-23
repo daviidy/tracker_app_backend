@@ -27,7 +27,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 1,\n  \"value\": 42338.43,\n  \"date\": \"-16195221-08-02\",\n  \"habit_id\": 1,\n  \"created_at\": \"2021-04-23T13:03:51.550Z\",\n  \"updated_at\": \"2021-04-23T13:03:51.550Z\",\n  \"user_id\": 1\n}",
+      "response_body": "{\n  \"id\": 1,\n  \"value\": 96019.35,\n  \"date\": \"-9566935-02-20\",\n  \"habit_id\": 1,\n  \"created_at\": \"2021-04-23T13:07:14.530Z\",\n  \"updated_at\": \"2021-04-23T13:07:14.530Z\",\n  \"user_id\": 1\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -36,12 +36,12 @@
         "X-Permitted-Cross-Domain-Policies": "none",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"9f4e991b4fbb05c232812393fd160f4c\"",
+        "ETag": "W/\"eb156ed4a1516f28065c39c5d9e333d6\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "206f4bb3-c004-4ed5-b186-6427c542dee5",
-        "X-Runtime": "0.004652",
+        "X-Request-Id": "beec3ed5-51eb-4e14-9a78-5acff2e4a648",
+        "X-Runtime": "0.005874",
         "Vary": "Origin",
-        "Content-Length": "155"
+        "Content-Length": "154"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

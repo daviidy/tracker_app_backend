@@ -41,7 +41,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 1,\n  \"email\": \"test@test.com\",\n  \"created_at\": \"2021-04-23T13:03:52.076Z\",\n  \"updated_at\": \"2021-04-23T13:03:52.076Z\",\n  \"admin\": false,\n  \"username\": \"dave\"\n}",
+      "response_body": "{\n  \"id\": 1,\n  \"email\": \"test@test.com\",\n  \"created_at\": \"2021-04-23T13:07:15.055Z\",\n  \"updated_at\": \"2021-04-23T13:07:15.055Z\",\n  \"admin\": false,\n  \"username\": \"dave\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -50,10 +50,10 @@
         "X-Permitted-Cross-Domain-Policies": "none",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"be667845dba70b084426deb291ed5e93\"",
+        "ETag": "W/\"d3bd9f974df57fee566dbdc37f7e6ed6\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "0f7969f5-913c-4d62-a931-b6ead9aa3f79",
-        "X-Runtime": "0.019623",
+        "X-Request-Id": "700a367b-a561-4568-93a6-d830c5d9b5c2",
+        "X-Runtime": "0.023707",
         "Vary": "Origin",
         "Content-Length": "144"
       },

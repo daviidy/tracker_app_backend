@@ -84,7 +84,10 @@ RSpec.describe 'Measurements API' do
     end
 
     context 'when an invalid request' do
-      before { post "/habits/#{habit_id}/measurements", params: { date: Date.today, user_id: user.id }, headers: authenticated_header(user) }
+      before do
+        post "/habits/#{habit_id}/measurements", params: { date: Date.today, user_id: user.id },
+                                                 headers: authenticated_header(user)
+      end
 
       it 'returns status code 422' do
         expect(response).to have_http_status(422)
@@ -100,7 +103,9 @@ RSpec.describe 'Measurements API' do
   describe 'PUT /habits/:habit_id/measurements/:id' do
     let(:valid_attributes) { { value: 3.5 } }
 
-    before { put "/habits/#{habit_id}/measurements/#{id}", params: valid_attributes, headers: authenticated_header(user) }
+    before do
+      put "/habits/#{habit_id}/measurements/#{id}", params: valid_attributes, headers: authenticated_header(user)
+    end
 
     context 'when measurement exists' do
       it 'returns status code 204' do
