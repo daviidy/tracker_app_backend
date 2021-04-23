@@ -15,6 +15,11 @@
       "with_example": true,
       "name": "date",
       "description": " date"
+    },
+    {
+      "with_example": true,
+      "name": "user_id",
+      "description": " user"
     }
   ],
   "response_fields": [
@@ -24,10 +29,11 @@
     {
       "request_method": "POST",
       "request_path": "/habits/1/measurements",
-      "request_body": "{\"value\":10.2,\"date\":\"2021-04-19\"}",
+      "request_body": "{\"value\":10.2,\"date\":\"2021-04-23\",\"user_id\":1}",
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "test.org",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyMDM4MDk5NX0.9kdtRxlazvcIK5RdwhfgeBb0rPhPuA1H3jpRNcZOBo0",
         "Cookie": ""
       },
       "request_query_parameters": {
@@ -35,7 +41,7 @@
       "request_content_type": "application/json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Oren Wyman\",\n  \"created_at\": \"2021-04-19T13:00:50.564Z\",\n  \"updated_at\": \"2021-04-19T13:00:50.564Z\"\n}",
+      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Fr. Marvin Bode\",\n  \"created_at\": \"2021-04-23T13:03:51.707Z\",\n  \"updated_at\": \"2021-04-23T13:03:51.707Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -44,11 +50,12 @@
         "X-Permitted-Cross-Domain-Policies": "none",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"8d10f20acdcb0c09c6da5528124df52a\"",
+        "ETag": "W/\"daf7ff4ef2bff910bb6f531013f4c313\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "66a3e4bb-93cb-4b3d-8c7f-432dd8affa07",
-        "X-Runtime": "0.013197",
-        "Content-Length": "108"
+        "X-Request-Id": "61142767-0398-4405-a922-2a0eda214e75",
+        "X-Runtime": "0.010622",
+        "Vary": "Origin",
+        "Content-Length": "113"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

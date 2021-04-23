@@ -19,6 +19,7 @@
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "test.org",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyMDM4MDk5NX0.9kdtRxlazvcIK5RdwhfgeBb0rPhPuA1H3jpRNcZOBo0",
         "Cookie": ""
       },
       "request_query_parameters": {
@@ -26,7 +27,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Jama Sauer\",\n  \"created_at\": \"2021-04-19T13:00:49.629Z\",\n  \"updated_at\": \"2021-04-19T13:00:49.629Z\"\n}",
+      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Roman Dickens Jr.\",\n  \"created_at\": \"2021-04-23T13:03:51.098Z\",\n  \"updated_at\": \"2021-04-23T13:03:51.098Z\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -35,11 +36,12 @@
         "X-Permitted-Cross-Domain-Policies": "none",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"e45c48fdca7e1948de07b579c460a06c\"",
+        "ETag": "W/\"3bffe98ce6f083fc97a3ac662a0adcfd\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "dcb14d49-6ce6-45af-b539-18bd504820cf",
-        "X-Runtime": "0.004453",
-        "Content-Length": "108"
+        "X-Request-Id": "03850df3-078a-4752-9853-3f743a7b62bc",
+        "X-Runtime": "0.005495",
+        "Vary": "Origin",
+        "Content-Length": "115"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

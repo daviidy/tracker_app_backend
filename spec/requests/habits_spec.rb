@@ -4,13 +4,23 @@ require 'rspec_api_documentation/dsl'
 
 RSpec.describe 'Habits API', type: :request do
   # initialize test data
+  let!(:user) { create(:user) }
   let!(:habits) { create_list(:habit, 10) }
   let(:habit_id) { habits.first.id }
 
+  let(:auth_params) { { email: user.email, password: user.password } }
+  
+  def authenticated_header(user)
+    post '/auth', params: { email: user.email, password: user.password }
+    token = json['token']
+    { 'Authorization': "Bearer #{token}" }
+  end
+
   # Test suite for GET /habits
   describe 'GET /habits' do
+
     # make HTTP get request before each example
-    before { get '/habits' }
+    before { get '/habits', headers: authenticated_header(user) }
 
     it 'returns habits' do
       # Note `json` is a custom helper to parse JSON responses
@@ -25,7 +35,7 @@ RSpec.describe 'Habits API', type: :request do
 
   # Test suite for GET /habits/:id
   describe 'GET /habits/:id' do
-    before { get "/habits/#{habit_id}" }
+    before { get "/habits/#{habit_id}", headers: authenticated_header(user) }
 
     context 'when the record exists' do
       it 'returns the habit' do
@@ -57,7 +67,7 @@ RSpec.describe 'Habits API', type: :request do
     let(:valid_attributes) { { name: 'Learn Elm' } }
 
     context 'when the request is valid' do
-      before { post '/habits', params: valid_attributes }
+      before { post '/habits', params: valid_attributes, headers: authenticated_header(user) }
 
       it 'creates a habit' do
         expect(json['name']).to eq('Learn Elm')
@@ -69,7 +79,7 @@ RSpec.describe 'Habits API', type: :request do
     end
 
     context 'when the request is invalid' do
-      before { post '/habits', params: { title: 'Foobar' } }
+      before { post '/habits', params: { title: 'Foobar' }, headers: authenticated_header(user) }
 
       it 'returns status code 422' do
         expect(response).to have_http_status(422)
@@ -87,7 +97,7 @@ RSpec.describe 'Habits API', type: :request do
     let(:valid_attributes) { { name: 'Shopping' } }
 
     context 'when the record exists' do
-      before { put "/habits/#{habit_id}", params: valid_attributes }
+      before { put "/habits/#{habit_id}", params: valid_attributes, headers: authenticated_header(user) }
 
       it 'updates the record' do
         expect(response.body).to be_empty
@@ -101,7 +111,7 @@ RSpec.describe 'Habits API', type: :request do
 
   # Test suite for DELETE /habits/:id
   describe 'DELETE /habits/:id' do
-    before { delete "/habits/#{habit_id}" }
+    before { delete "/habits/#{habit_id}", headers: authenticated_header(user) }
 
     it 'returns status code 204' do
       expect(response).to have_http_status(204)

@@ -19,6 +19,7 @@
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "test.org",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyMDM4MDk5NX0.9kdtRxlazvcIK5RdwhfgeBb0rPhPuA1H3jpRNcZOBo0",
         "Cookie": ""
       },
       "request_query_parameters": {
@@ -26,7 +27,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 1,\n    \"name\": \"Bobby Lemke\",\n    \"created_at\": \"2021-04-19T13:00:48.619Z\",\n    \"updated_at\": \"2021-04-19T13:00:48.619Z\"\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Aurelio Braun\",\n    \"created_at\": \"2021-04-19T13:00:48.628Z\",\n    \"updated_at\": \"2021-04-19T13:00:48.628Z\"\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Russell Bartoletti\",\n    \"created_at\": \"2021-04-19T13:00:48.634Z\",\n    \"updated_at\": \"2021-04-19T13:00:48.634Z\"\n  },\n  {\n    \"id\": 4,\n    \"name\": \"Gov. Lyle Harber\",\n    \"created_at\": \"2021-04-19T13:00:48.640Z\",\n    \"updated_at\": \"2021-04-19T13:00:48.640Z\"\n  },\n  {\n    \"id\": 5,\n    \"name\": \"Babara Will\",\n    \"created_at\": \"2021-04-19T13:00:48.645Z\",\n    \"updated_at\": \"2021-04-19T13:00:48.645Z\"\n  },\n  {\n    \"id\": 6,\n    \"name\": \"Chuck Muller\",\n    \"created_at\": \"2021-04-19T13:00:48.650Z\",\n    \"updated_at\": \"2021-04-19T13:00:48.650Z\"\n  },\n  {\n    \"id\": 7,\n    \"name\": \"Isabelle Rodriguez DVM\",\n    \"created_at\": \"2021-04-19T13:00:48.655Z\",\n    \"updated_at\": \"2021-04-19T13:00:48.655Z\"\n  },\n  {\n    \"id\": 8,\n    \"name\": \"Camille Hudson JD\",\n    \"created_at\": \"2021-04-19T13:00:48.659Z\",\n    \"updated_at\": \"2021-04-19T13:00:48.659Z\"\n  },\n  {\n    \"id\": 9,\n    \"name\": \"Emmanuel Jaskolski\",\n    \"created_at\": \"2021-04-19T13:00:48.663Z\",\n    \"updated_at\": \"2021-04-19T13:00:48.663Z\"\n  },\n  {\n    \"id\": 10,\n    \"name\": \"Zula Lindgren VM\",\n    \"created_at\": \"2021-04-19T13:00:48.668Z\",\n    \"updated_at\": \"2021-04-19T13:00:48.668Z\"\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 1,\n    \"name\": \"Miss Hong Bogisich\",\n    \"created_at\": \"2021-04-23T13:03:50.981Z\",\n    \"updated_at\": \"2021-04-23T13:03:50.981Z\"\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Felix Bauch\",\n    \"created_at\": \"2021-04-23T13:03:50.986Z\",\n    \"updated_at\": \"2021-04-23T13:03:50.986Z\"\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Mr. Melva Hermiston\",\n    \"created_at\": \"2021-04-23T13:03:50.988Z\",\n    \"updated_at\": \"2021-04-23T13:03:50.988Z\"\n  },\n  {\n    \"id\": 4,\n    \"name\": \"Edmond Jenkins\",\n    \"created_at\": \"2021-04-23T13:03:50.991Z\",\n    \"updated_at\": \"2021-04-23T13:03:50.991Z\"\n  },\n  {\n    \"id\": 5,\n    \"name\": \"Hyacinth Shanahan\",\n    \"created_at\": \"2021-04-23T13:03:50.993Z\",\n    \"updated_at\": \"2021-04-23T13:03:50.993Z\"\n  },\n  {\n    \"id\": 6,\n    \"name\": \"Corina Collier\",\n    \"created_at\": \"2021-04-23T13:03:50.995Z\",\n    \"updated_at\": \"2021-04-23T13:03:50.995Z\"\n  },\n  {\n    \"id\": 7,\n    \"name\": \"Cristie Powlowski JD\",\n    \"created_at\": \"2021-04-23T13:03:50.997Z\",\n    \"updated_at\": \"2021-04-23T13:03:50.997Z\"\n  },\n  {\n    \"id\": 8,\n    \"name\": \"Jack Hirthe\",\n    \"created_at\": \"2021-04-23T13:03:50.999Z\",\n    \"updated_at\": \"2021-04-23T13:03:50.999Z\"\n  },\n  {\n    \"id\": 9,\n    \"name\": \"Dr. Raymundo Ledner\",\n    \"created_at\": \"2021-04-23T13:03:51.003Z\",\n    \"updated_at\": \"2021-04-23T13:03:51.003Z\"\n  },\n  {\n    \"id\": 10,\n    \"name\": \"Dr. Rosario Hickle\",\n    \"created_at\": \"2021-04-23T13:03:51.006Z\",\n    \"updated_at\": \"2021-04-23T13:03:51.006Z\"\n  }\n]",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -35,11 +36,12 @@
         "X-Permitted-Cross-Domain-Policies": "none",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"50456590e3ae188fcffda763602306ff\"",
+        "ETag": "W/\"cf30c8f1f1be96d1800478801a64e2f6\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "9f82b30f-aca7-4074-a79a-027d29a0b0a4",
-        "X-Runtime": "0.049929",
-        "Content-Length": "1146"
+        "X-Request-Id": "483753bf-7115-4af0-a081-2140594aa637",
+        "X-Runtime": "0.027461",
+        "Vary": "Origin",
+        "Content-Length": "1153"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

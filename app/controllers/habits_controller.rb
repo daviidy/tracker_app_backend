@@ -1,4 +1,5 @@
-class HabitsController < ApplicationController
+class HabitsController < ApiController
+  before_action :authenticate_user!
   before_action :set_habit, only: %i[show update destroy]
 
   # GET /habits

@@ -81,6 +81,26 @@
           "method": "get"
         }
       ]
+    },
+    {
+      "name": "Users",
+      "explanation": "How to sign up and sign in",
+      "examples": [
+        {
+          "description": "Create a new user",
+          "link": "users/create_a_new_user.json",
+          "groups": "all",
+          "route": "/users",
+          "method": "post"
+        },
+        {
+          "description": "Sign in the user and get token",
+          "link": "users/sign_in_the_user_and_get_token.json",
+          "groups": "all",
+          "route": "/auth",
+          "method": "post"
+        }
+      ]
     }
   ]
 }

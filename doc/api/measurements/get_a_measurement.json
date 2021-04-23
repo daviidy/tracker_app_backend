@@ -19,6 +19,7 @@
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "test.org",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyMDM4MDk5NX0.9kdtRxlazvcIK5RdwhfgeBb0rPhPuA1H3jpRNcZOBo0",
         "Cookie": ""
       },
       "request_query_parameters": {
@@ -26,7 +27,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 1,\n  \"value\": 91129.44,\n  \"date\": \"-12288174-02-05\",\n  \"habit_id\": 1,\n  \"created_at\": \"2021-04-19T13:00:50.381Z\",\n  \"updated_at\": \"2021-04-19T13:00:50.381Z\"\n}",
+      "response_body": "{\n  \"id\": 1,\n  \"value\": 42338.43,\n  \"date\": \"-16195221-08-02\",\n  \"habit_id\": 1,\n  \"created_at\": \"2021-04-23T13:03:51.550Z\",\n  \"updated_at\": \"2021-04-23T13:03:51.550Z\",\n  \"user_id\": 1\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -35,11 +36,12 @@
         "X-Permitted-Cross-Domain-Policies": "none",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"52bd9390a5477c9dde2c850ffe30dc8c\"",
+        "ETag": "W/\"9f4e991b4fbb05c232812393fd160f4c\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "ff8ca91c-3336-4b0a-8eb3-07161ba2641d",
-        "X-Runtime": "0.007092",
-        "Content-Length": "143"
+        "X-Request-Id": "206f4bb3-c004-4ed5-b186-6427c542dee5",
+        "X-Runtime": "0.004652",
+        "Vary": "Origin",
+        "Content-Length": "155"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

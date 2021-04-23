@@ -9,9 +9,14 @@ resource 'Measurements' do
   header 'Content-Type', 'application/json'
   header 'Host', 'test.org'
 
+  token = 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyMDM4MDk5NX0.9kdtRxlazvcIK5RdwhfgeBb0rPhPuA1H3jpRNcZOBo0'
+  
+  header 'Authorization', "Bearer #{token}"
+
   get '/habits/:habit_id/measurements' do
     let!(:habit) { create(:habit) }
-    let!(:measurements) { create_list(:measurement, 20, habit_id: habit.id) }
+    let!(:user) { create(:user) }
+    let!(:measurements) { create_list(:measurement, 20, habit_id: habit.id, user_id: user.id) }
     let(:habit_id) { habit.id }
     context '200' do
       example_request 'Get a list of measurements for a habit' do
@@ -24,7 +29,8 @@ resource 'Measurements' do
   get '/habits/:habit_id/measurements/:id' do
     context '200' do
       let!(:habit) { create(:habit) }
-      let!(:measurements) { create_list(:measurement, 20, habit_id: habit.id) }
+      let!(:user) { create(:user) }
+      let!(:measurements) { create_list(:measurement, 20, habit_id: habit.id, user_id: user.id) }
       let(:habit_id) { habit.id }
       let(:id) { measurements.first.id }
 
@@ -36,7 +42,8 @@ resource 'Measurements' do
           "date": measurements.first.date,
           "habit_id": measurements.first.habit_id,
           "created_at": measurements.first.created_at,
-          "updated_at": measurements.first.updated_at
+          "updated_at": measurements.first.updated_at,
+          "user_id": measurements.first.user_id
         }
         expected_response = json.to_json
         expect(status).to eq(200)
@@ -48,9 +55,13 @@ resource 'Measurements' do
   post '/habits/:habit_id/measurements' do
     parameter :value, with_example: true
     parameter :date, with_example: true
+    parameter :user_id, with_example: true
+
+    let!(:user) { create(:user) }
 
     let(:value) { 10.2 }
     let(:date) { Date.today }
+    let!(:user_id) { user.id }
 
     let(:raw_post) { params.to_json }
 
@@ -67,12 +78,14 @@ resource 'Measurements' do
   put '/habits/:habit_id/measurements/:id' do
     parameter :value, with_example: true
 
+    let!(:user) { create(:user) }
+
     let(:value) { 13 }
     let(:raw_post) { params.to_json }
 
     context '200' do
       let!(:habit) { create(:habit) }
-      let!(:measurements) { create_list(:measurement, 20, habit_id: habit.id) }
+      let!(:measurements) { create_list(:measurement, 20, habit_id: habit.id, user_id: user.id) }
       let(:habit_id) { habit.id }
       let(:id) { measurements.first.id }
       example_request 'Edit a measurement' do
@@ -85,7 +98,8 @@ resource 'Measurements' do
   delete '/habits/:habit_id/measurements/:id' do
     context '200' do
       let!(:habit) { create(:habit) }
-      let!(:measurements) { create_list(:measurement, 20, habit_id: habit.id) }
+      let!(:user) { create(:user) }
+      let!(:measurements) { create_list(:measurement, 20, habit_id: habit.id, user_id: user.id) }
       let(:habit_id) { habit.id }
       let(:id) { measurements.first.id }
       example_request 'Delete a measurement' do

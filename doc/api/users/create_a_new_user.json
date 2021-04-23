@@ -1,15 +1,25 @@
 {
-  "resource": "Habits",
-  "resource_explanation": "Habits resource",
+  "resource": "Users",
+  "resource_explanation": "How to sign up and sign in",
   "http_method": "POST",
-  "route": "/habits",
-  "description": "Add a habit",
-  "explanation": null,
+  "route": "/users",
+  "description": "Create a new user",
+  "explanation": "You should add the following parameters to create a new user",
   "parameters": [
     {
       "with_example": true,
-      "name": "name",
-      "description": " name"
+      "name": "username",
+      "description": " username"
+    },
+    {
+      "with_example": true,
+      "name": "email",
+      "description": " email"
+    },
+    {
+      "with_example": true,
+      "name": "password",
+      "description": " password"
     }
   ],
   "response_fields": [
@@ -18,8 +28,8 @@
   "requests": [
     {
       "request_method": "POST",
-      "request_path": "/habits",
-      "request_body": "{\"name\":\"Any habit\"}",
+      "request_path": "/users",
+      "request_body": "{\"username\":\"dave\",\"email\":\"test@test.com\",\"password\":\"dave123\"}",
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "test.org",
@@ -29,9 +39,9 @@
       "request_query_parameters": {
       },
       "request_content_type": "application/json",
-      "response_status": 201,
-      "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 1,\n  \"name\": \"Any habit\",\n  \"created_at\": \"2021-04-23T13:03:51.189Z\",\n  \"updated_at\": \"2021-04-23T13:03:51.189Z\"\n}",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": 1,\n  \"email\": \"test@test.com\",\n  \"created_at\": \"2021-04-23T13:03:52.076Z\",\n  \"updated_at\": \"2021-04-23T13:03:52.076Z\",\n  \"admin\": false,\n  \"username\": \"dave\"\n}",
       "response_headers": {
         "X-Frame-Options": "SAMEORIGIN",
         "X-XSS-Protection": "1; mode=block",
@@ -40,12 +50,12 @@
         "X-Permitted-Cross-Domain-Policies": "none",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"e61928e18c9fa6b8e18f43cb7724eed2\"",
+        "ETag": "W/\"be667845dba70b084426deb291ed5e93\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "d9c36bf1-690c-4537-a7ba-781ddf9c06df",
-        "X-Runtime": "0.009928",
+        "X-Request-Id": "0f7969f5-913c-4d62-a931-b6ead9aa3f79",
+        "X-Runtime": "0.019623",
         "Vary": "Origin",
-        "Content-Length": "107"
+        "Content-Length": "144"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

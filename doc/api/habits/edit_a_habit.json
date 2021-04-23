@@ -23,6 +23,7 @@
       "request_headers": {
         "Content-Type": "application/json",
         "Host": "test.org",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyMDM4MDk5NX0.9kdtRxlazvcIK5RdwhfgeBb0rPhPuA1H3jpRNcZOBo0",
         "Cookie": ""
       },
       "request_query_parameters": {
@@ -39,8 +40,9 @@
         "X-Permitted-Cross-Domain-Policies": "none",
         "Referrer-Policy": "strict-origin-when-cross-origin",
         "Cache-Control": "no-cache",
-        "X-Request-Id": "083e9bb0-c0d2-42c6-aa18-3cfd71ad721f",
-        "X-Runtime": "0.010057"
+        "X-Request-Id": "59baca99-275f-420c-8cc6-95f0e30dc415",
+        "X-Runtime": "0.008554",
+        "Vary": "Origin"
       },
       "response_content_type": null,
       "curl": null
