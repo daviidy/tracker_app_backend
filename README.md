@@ -1,24 +1,64 @@
-# README
+# tracker_app_backend
+I had to build the backend API for a mobile-web tracking application.
+- To use the app, you have to sign in or log in
+- Authenticated user:
+  - can make CRUD operations on habits
+  - can make CRUD operations for measures related to a habit
+- The route for the API documentation is /api/docs.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project screenshot
+![screenshot](./screenshot.png)
 
-Things you may want to cover:
+## 🔨 Built in
 
-* Ruby version
+- Ruby on Rails 6.0.3
+- Bootstrap 4
+- rspec_api_documentation
+- apitome
 
-* System dependencies
+## 🚀 Our Project
 
-* Configuration
+Our project can be found at https://github.com/daviidy/tracker_app_backend
 
-* Database creation
+## Live Demo
 
-* Database initialization
+You can find the demo [here](https://tracker-back-mcv.herokuapp.com/api/docs)
 
-* How to run the test suite
+## To run the project in local
 
-* Services (job queues, cache servers, search engines, etc.)
+- clone the repository from here [repo link](https://github.com/daviidy/tracker_app_backend)
+- Open terminal and navigate to root folder (/tracker_app_backend).
+- Once in root folder
+  - type: `rails s` in terminal and in browser
+  - run `bundle install`
+  - run `yarn install`
+  - run`rails db:create`
+  - run `rails db:migrate`
+  - type localhost:3000/ in address bar.
 
-* Deployment instructions
+## How to run the test suite
 
-* ...
+We added validations and associations tests for User, Event and Attendance models.
+We added also integration tests for authentication and event creation
+Run these tests with those commands:
+
+### tests
+- run `rspec` at the root of the project folder
+
+## 👨🏽‍💻 👨🏿‍💻 Creator
+
+👤 **David YAO**
+
+- Github: [@daviidy](https://github.com/daviidy)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is no licensed.
