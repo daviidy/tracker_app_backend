@@ -1,4 +1,4 @@
-# spec/requests/habits_spec.rb
+# spec/attendance/habits_spec.rb
 # rubocop:disable  Metrics/BlockLength
 require 'rails_helper'
 require 'rspec_api_documentation/dsl'

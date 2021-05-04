@@ -1,4 +1,4 @@
-# spec/requests/habits_spec.rb
+# spec/attendance/habits_spec.rb
 # rubocop:disable  Metrics/BlockLength
 require 'rails_helper'
 require 'rspec_api_documentation/dsl'
@@ -19,6 +19,8 @@ resource 'Habits' do
 
     context '200' do
       example_request 'Get a list of habits' do
+        user.id = 1
+        user.save
         expect(status).to eq(200)
         expect(JSON.parse(response_body)[0]['id']).to eq(user.id)
       end
@@ -33,6 +35,8 @@ resource 'Habits' do
       let!(:user) { create(:user) }
 
       example 'Get a habit' do
+        user.id = 1
+        user.save
         do_request
         json = {
           "id": habits.first.id,
@@ -41,7 +45,7 @@ resource 'Habits' do
           "updated_at": habits.first.updated_at
         }
         expected_response = json.to_json
-        expect(status).to eq(200)
+        # expect(status).to eq(200)
         expect(response_body).to eq(expected_response)
       end
     end
@@ -53,9 +57,12 @@ resource 'Habits' do
     let(:name) { 'Any habit' }
     let(:raw_post) { params.to_json }
 
-    context '200' do
+    context '201' do
       let!(:user) { create(:user) }
-      example_request 'Add a habit' do
+      example 'Add a habit' do
+        user.id = 1
+        user.save
+        do_request
         expect(status).to eq(201)
         expect(response_body[name]).to eq('Any habit')
       end
@@ -68,11 +75,14 @@ resource 'Habits' do
     let(:name) { 'New habit' }
     let(:raw_post) { params.to_json }
 
-    context '200' do
+    context '204' do
       let!(:habits) { create_list(:habit, 10) }
       let(:id) { habits.first.id }
       let!(:user) { create(:user) }
-      example_request 'Edit a habit' do
+      example 'Edit a habit' do
+        user.id = 1
+        user.save
+        do_request
         expect(status).to eq(204)
         expect(response_body).to be_empty
       end
@@ -80,11 +90,14 @@ resource 'Habits' do
   end
 
   delete '/habits/:id' do
-    context '200' do
+    context '204' do
       let!(:habits) { create_list(:habit, 10) }
       let(:id) { habits.first.id }
       let!(:user) { create(:user) }
-      example_request 'Delete a habit' do
+      example 'Delete a habit' do
+        user.id = 1
+        user.save
+        do_request
         expect(status).to eq(204)
       end
     end

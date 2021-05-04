@@ -48,14 +48,14 @@ RSpec.describe 'Habits API', type: :request do
     end
 
     context 'when the record does not exist' do
-      let(:habit_id) { 100 }
+      let(:habit_id) { 200 }
 
       it 'returns status code 404' do
         expect(response).to have_http_status(404)
       end
 
       it 'returns a not found message' do
-        expect(response.body).to match(/Couldn't find Habit with 'id'=100/)
+        expect(response.body).to match(/Couldn't find Habit with 'id'=200/)
       end
     end
   end
