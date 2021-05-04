@@ -1,0 +1,64 @@
+{
+  "resource": "Measurements",
+  "resource_explanation": "Measurements resource",
+  "http_method": "POST",
+  "route": "/habits/:habit_id/measurements",
+  "description": "Add a measurement",
+  "explanation": null,
+  "parameters": [
+    {
+      "with_example": true,
+      "name": "value",
+      "description": " value"
+    },
+    {
+      "with_example": true,
+      "name": "date",
+      "description": " date"
+    },
+    {
+      "with_example": true,
+      "name": "user_id",
+      "description": " user"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/habits/44/measurements",
+      "request_body": "{\"value\":10.2,\"date\":\"2021-05-04\",\"user_id\":1}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "test.org",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyMDM4MDk5NX0.9kdtRxlazvcIK5RdwhfgeBb0rPhPuA1H3jpRNcZOBo0",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 44,\n  \"name\": \"Yuk Kuhlman DC\",\n  \"created_at\": \"2021-05-04T15:15:19.311Z\",\n  \"updated_at\": \"2021-05-04T15:15:19.311Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"016d204bdd98d241df2d0ce274d3133e\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "b987d80b-12dd-462e-9ee5-ce3145faf6b3",
+        "X-Runtime": "0.023676",
+        "Vary": "Origin",
+        "Content-Length": "113"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

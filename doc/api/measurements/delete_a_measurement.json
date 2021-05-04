@@ -1,0 +1,47 @@
+{
+  "resource": "Measurements",
+  "resource_explanation": "Measurements resource",
+  "http_method": "DELETE",
+  "route": "/habits/:habit_id/measurements/:id",
+  "description": "Delete a measurement",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/habits/46/measurements/62",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "test.org",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyMDM4MDk5NX0.9kdtRxlazvcIK5RdwhfgeBb0rPhPuA1H3jpRNcZOBo0",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "4e30ac40-2054-489c-b8a5-50b99118941a",
+        "X-Runtime": "0.015251",
+        "Vary": "Origin"
+      },
+      "response_content_type": null,
+      "curl": null
+    }
+  ]
+}

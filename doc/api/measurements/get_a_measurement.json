@@ -1,0 +1,50 @@
+{
+  "resource": "Measurements",
+  "resource_explanation": "Measurements resource",
+  "http_method": "GET",
+  "route": "/habits/:habit_id/measurements/:id",
+  "description": "Get a measurement",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/habits/43/measurements/21",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "test.org",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyMDM4MDk5NX0.9kdtRxlazvcIK5RdwhfgeBb0rPhPuA1H3jpRNcZOBo0",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": 21,\n  \"value\": 13440.86,\n  \"date\": \"2021-05-04\",\n  \"habit_id\": 43,\n  \"created_at\": \"2021-05-04T15:15:19.022Z\",\n  \"updated_at\": \"2021-05-04T15:15:19.022Z\",\n  \"user_id\": 7\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"b1c2fae6bcd4ba02972ef19a2b033d6f\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "e8aece07-885a-460f-84f7-1aea0529607f",
+        "X-Runtime": "0.013211",
+        "Vary": "Origin",
+        "Content-Length": "152"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "resource": "Measurements",
+  "resource_explanation": "Measurements resource",
+  "http_method": "PUT",
+  "route": "/habits/:habit_id/measurements/:id",
+  "description": "Edit a measurement",
+  "explanation": null,
+  "parameters": [
+    {
+      "with_example": true,
+      "name": "value",
+      "description": " value"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/habits/45/measurements/42",
+      "request_body": "{\"value\":13}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "test.org",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyMDM4MDk5NX0.9kdtRxlazvcIK5RdwhfgeBb0rPhPuA1H3jpRNcZOBo0",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "31c65245-a4a7-43d0-8a28-566625123af6",
+        "X-Runtime": "0.022198",
+        "Vary": "Origin"
+      },
+      "response_content_type": null,
+      "curl": null
+    }
+  ]
+}

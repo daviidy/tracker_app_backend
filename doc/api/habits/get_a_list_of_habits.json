@@ -1,0 +1,50 @@
+{
+  "resource": "Habits",
+  "resource_explanation": "Habits resource",
+  "http_method": "GET",
+  "route": "/habits",
+  "description": "Get a list of habits",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/habits",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "test.org",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyMDM4MDk5NX0.9kdtRxlazvcIK5RdwhfgeBb0rPhPuA1H3jpRNcZOBo0",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 1,\n    \"name\": \"Charlene Bode\",\n    \"created_at\": \"2021-05-04T15:15:17.793Z\",\n    \"updated_at\": \"2021-05-04T15:15:17.793Z\"\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Fr. Kristine Balistreri\",\n    \"created_at\": \"2021-05-04T15:15:17.802Z\",\n    \"updated_at\": \"2021-05-04T15:15:17.802Z\"\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Willis Cormier LLD\",\n    \"created_at\": \"2021-05-04T15:15:17.811Z\",\n    \"updated_at\": \"2021-05-04T15:15:17.811Z\"\n  },\n  {\n    \"id\": 4,\n    \"name\": \"Leone Stracke Jr.\",\n    \"created_at\": \"2021-05-04T15:15:17.817Z\",\n    \"updated_at\": \"2021-05-04T15:15:17.817Z\"\n  },\n  {\n    \"id\": 5,\n    \"name\": \"Miquel Rippin\",\n    \"created_at\": \"2021-05-04T15:15:17.823Z\",\n    \"updated_at\": \"2021-05-04T15:15:17.823Z\"\n  },\n  {\n    \"id\": 6,\n    \"name\": \"Yasmine Crist\",\n    \"created_at\": \"2021-05-04T15:15:17.830Z\",\n    \"updated_at\": \"2021-05-04T15:15:17.830Z\"\n  },\n  {\n    \"id\": 7,\n    \"name\": \"Delbert Bartell\",\n    \"created_at\": \"2021-05-04T15:15:17.837Z\",\n    \"updated_at\": \"2021-05-04T15:15:17.837Z\"\n  },\n  {\n    \"id\": 8,\n    \"name\": \"Bryanna Durgan\",\n    \"created_at\": \"2021-05-04T15:15:17.843Z\",\n    \"updated_at\": \"2021-05-04T15:15:17.843Z\"\n  },\n  {\n    \"id\": 9,\n    \"name\": \"Rolando Moore\",\n    \"created_at\": \"2021-05-04T15:15:17.850Z\",\n    \"updated_at\": \"2021-05-04T15:15:17.850Z\"\n  },\n  {\n    \"id\": 10,\n    \"name\": \"Diamond McGlynn IV\",\n    \"created_at\": \"2021-05-04T15:15:17.857Z\",\n    \"updated_at\": \"2021-05-04T15:15:17.857Z\"\n  }\n]",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"d14f245e4c8c1cd3086f6315cfd4f44b\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "3d847ce1-4700-496f-8b96-9b2ce2a4ab9d",
+        "X-Runtime": "0.058749",
+        "Vary": "Origin",
+        "Content-Length": "1149"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}
