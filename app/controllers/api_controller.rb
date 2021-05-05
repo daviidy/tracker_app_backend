@@ -4,6 +4,7 @@ class ApiController < ApplicationController
 
   def measurement?(user, habit)
     #user.measurements.where('habit_id = ?', habit.id)
+    @today = Measurement.today.where('user_id = ?', user.id).order('date DESC')
     @yesterday = Measurement.yesterday.where('user_id = ?', user.id).order('date DESC')
     @last_week = Measurement.last_week.where('user_id = ?', user.id).order('date DESC')
     [@today, @yesterday, @last_week]
