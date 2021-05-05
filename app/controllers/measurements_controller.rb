@@ -1,6 +1,6 @@
 class MeasurementsController < ApiController
   before_action :authenticate_user!
-  before_action :set_habit
+  before_action :set_habit, except: %i[index]
   before_action :set_habit_measurement, only: %i[show update destroy]
 
   # GET /habits/:habit_id/measurements
