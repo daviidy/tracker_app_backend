@@ -6,7 +6,7 @@ class Measurement < ApplicationRecord
   # validations
   validates_presence_of :value, :date
 
-  scope :today, -> { where('date = ?', Date.today) }
-  scope :yesterday, -> { where('date = ?', Date.yesterday) }
-  scope :last_week, -> { where('date < ?', Date.yesterday) }
+  scope :today, -> { where('date = ?', Date.today.to_s(:db)) }
+  scope :yesterday, -> { where('date = ?', Date.yesterday.to_s(:db)) }
+  scope :last_week, -> { where('date < ?', Date.yesterday.to_s(:db)) }
 end
