@@ -6,7 +6,7 @@ class MeasurementsController < ApiController
   # GET /habits/:habit_id/measurements
   def index
     # json_response(@habit.measurements)
-    json_response(measurement?(current_user, @habit)) 
+    json_response(measurement?(current_user, @habit))
   end
 
   # GET /habits/:habit_id/measurements/:id
