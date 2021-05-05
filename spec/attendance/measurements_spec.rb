@@ -55,7 +55,7 @@ resource 'Measurements' do
         expect(response_body).to eq(expected_response)
       end
     end
-  end
+  end 
 
   post '/habits/:habit_id/measurements' do
     parameter :value, with_example: true

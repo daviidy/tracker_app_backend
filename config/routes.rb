@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   end
   post :auth, to: 'authentication#create'
   get  '/auth' => 'authentication#fetch'
+  get  '/measures' => 'measurements#index'
 end
