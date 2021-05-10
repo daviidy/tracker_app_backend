@@ -49,15 +49,19 @@ Run these tests with those commands:
 
 If you have this error while running the test
 
-`KeyError:
-   key not found: :secret_key_base`
+```
+  KeyError:
+    key not found: :secret_key_base
+```
 
 - run `rake secret`
 - make sure you have a master.key file in your config folder
 - add this to your env file
 
-`RAILS_MASTER_KEY=your_master_key_content
-SECRET_KEY_BASE=your_generated_secret_key`
+```
+RAILS_MASTER_KEY=your_master_key_content
+SECRET_KEY_BASE=your_generated_secret_key
+```
 
 ## 👨🏽‍💻 👨🏿‍💻 Creator
 
