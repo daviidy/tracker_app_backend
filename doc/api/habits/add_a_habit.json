@@ -1,0 +1,54 @@
+{
+  "resource": "Habits",
+  "resource_explanation": "Habits resource",
+  "http_method": "POST",
+  "route": "/habits",
+  "description": "Add a habit",
+  "explanation": null,
+  "parameters": [
+    {
+      "with_example": true,
+      "name": "name",
+      "description": " name"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/habits",
+      "request_body": "{\"name\":\"Any habit\"}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "test.org",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyMDM4MDk5NX0.9kdtRxlazvcIK5RdwhfgeBb0rPhPuA1H3jpRNcZOBo0",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\n  \"id\": 21,\n  \"name\": \"Any habit\",\n  \"created_at\": \"2021-05-04T15:15:18.322Z\",\n  \"updated_at\": \"2021-05-04T15:15:18.322Z\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"25bfd654cdcf8f5bb21443e03962ab67\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "81aea90d-d030-41cb-8d73-7ee4fd323f19",
+        "X-Runtime": "0.013119",
+        "Vary": "Origin",
+        "Content-Length": "108"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

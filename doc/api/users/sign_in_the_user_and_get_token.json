@@ -1,0 +1,59 @@
+{
+  "resource": "Users",
+  "resource_explanation": "How to sign up and sign in",
+  "http_method": "POST",
+  "route": "/auth",
+  "description": "Sign in the user and get token",
+  "explanation": null,
+  "parameters": [
+    {
+      "with_example": true,
+      "name": "email",
+      "description": " email"
+    },
+    {
+      "with_example": true,
+      "name": "password",
+      "description": " password"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/auth",
+      "request_body": "{\"email\":\"george_ebert@nikolaus.info\",\"password\":\"ObWcFuMu1\"}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Host": "test.org",
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYyMDM4MDk5NX0.9kdtRxlazvcIK5RdwhfgeBb0rPhPuA1H3jpRNcZOBo0",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEyLCJleHAiOjE2MjEzNTA5MjB9.cSxq136A_ajIP6L5s9ZLCDwxKtG_9mPvEtSjSymjxMc\"\n}",
+      "response_headers": {
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "X-Download-Options": "noopen",
+        "X-Permitted-Cross-Domain-Policies": "none",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"f8e20cdaeb48ce3d3c085d3459afe578\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "242d1ab4-0011-42ca-ba30-bc10f0002648",
+        "X-Runtime": "0.116256",
+        "Vary": "Origin",
+        "Content-Length": "113"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

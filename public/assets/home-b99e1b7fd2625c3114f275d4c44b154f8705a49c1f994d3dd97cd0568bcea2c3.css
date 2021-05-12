@@ -1,0 +1,33 @@
+.border {
+    border: 2px solid;
+}
+
+.border-black {
+    border-color: black;
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+.p-5 {
+    padding: 5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.content {
+    padding: 5rem;
+    width: 50%;
+    margin: auto;
+    box-shadow: -4px -3px 25px -1px rgb(0 0 0 / 75%);
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+}

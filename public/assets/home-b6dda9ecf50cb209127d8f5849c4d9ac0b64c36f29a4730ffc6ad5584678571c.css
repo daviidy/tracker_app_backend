@@ -1,0 +1,19 @@
+.border {
+    border: 2px solid;
+}
+
+.border-black {
+    border-color: black;
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+.p-5 {
+    padding: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}

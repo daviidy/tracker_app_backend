@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+ENV['RAILS_ENV'] ||= 'test'
+User.create([{
+    username: 'dave',
+    password: 'dave123',
+    email: 'test@test.com'
+}])
